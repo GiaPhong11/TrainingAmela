@@ -24,18 +24,24 @@ public class LoginController {
         return "/Login";
     }
 
-    @PostMapping("/login")
+    @PostMapping("/dologin")
     public String doLogin(@ModelAttribute("user") User user, Model model, @CookieValue(value = "setUser", defaultValue = "") String setUser,
                           HttpServletResponse response, HttpServletRequest request) {
-
-        if (user.getEmail().equals("giaphong@gmail.com") && user.getPassword().equals("12345")) {
+        //implement business logic
+        if (user.getEmail().equals("admin@gmail.com") && user.getPassword().equals("12345")) {
             if (user.getEmail() != null)
                 setUser = user.getEmail();
+
+            // create cookie and set it in response
             Cookie cookie = new Cookie("setUser", setUser);
             cookie.setMaxAge(24 * 60 * 60);
             response.addCookie(cookie);
+
+            //get all cookies
             Cookie[] cookies = request.getCookies();
+            //iterate each cookie
             for (Cookie ck : cookies) {
+                //display only the cookie with the name 'setUser'
                 if (ck.getName().equals("setUser")) {
                     model.addAttribute("cookieValue", ck);
                     break;
@@ -52,7 +58,7 @@ public class LoginController {
             model.addAttribute("cookieValue", cookie);
             model.addAttribute("message", "Login failed. Try again.");
         }
-        return "/Login";
+        return "/login";
     }
 
 

@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f30c4993-5c73-47f4-a6d5-88b3401b3fa1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Validation/src/main/java/com/example/validation/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Validation/src/main/java/com/example/validation/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validation/src/main/resources/templates/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Validation/src/main/resources/templates/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validation/src/main/resources/templates/Info.html" beforeDir="false" afterPath="$PROJECT_DIR$/Validation/src/main/resources/templates/Info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TrainingAmela.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TrainingAmela.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validation/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Validation/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validation/src/main/java/com/example/validation/config/Java.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validation/src/main/java/com/example/validation/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Validation/src/main/java/com/example/validation/controller/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,15 +27,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/GiaPhong/abc/TrainingAmela",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GiaPhong/abc/TrainingAmela&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="D:/GiaPhong/abc/TrainingAmela/Validation/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Validation/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.D:/GiaPhong/abc/TrainingAmela/Validation/build.gradle" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,11 +73,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660181246684</updated>
-      <workItem from="1660181247859" duration="63000" />
+      <workItem from="1660181247859" duration="774000" />
+      <workItem from="1660182029676" duration="360000" />
+      <workItem from="1660207996656" duration="68000" />
+      <workItem from="1660208073345" duration="85000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

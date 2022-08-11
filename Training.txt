@@ -1,0 +1,21 @@
+-Session and Cookie 
+	+Session: 
+		1 cách để lưu lại dữ liệu người dùng sử dụng website
+		Thường được sử dụng trong các chức năng đăng nhập , đăng xuất 
+		Gía trị được lưu trong server
+		Sống trong 1 phiên làm việc
+	+Cookie:
+		Lưu trên trình duyệt của máy 
+Bài 9:AOP & ExceptionHanding
+-Exception Handling
+	+Mục tiêu : Cho thấy tầm quan trong của xử lí ngoại lệ , phân loại ngoại lệ ,các phương án xử lý
+	+Biên giới xử lý : Ngoại lệ xảy ra trong từng phạm vi phải được xử lý trước khi luồng thực thi đi khỏi phạm vi đó
+	+Các phương thức xử lý : 
+		1.Sử dụng Try-catch
+		2.Sử dụng @ExceptionHandleR
+		3.Sử dụng HandlerExceptionResolver
+		4.Sử dụng error-page
+		
+Bài 14,15: Spring Security
+-Các thành phần cốt lõi
+	+Security, SecurityContext và Authentication
