@@ -26,6 +26,11 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    // https://mvnrepository.com/artifact/org.springframework/spring-aop
+    implementation group: 'org.springframework', name: 'spring-aop', version: '5.3.22'
+    // https://mvnrepository.com/artifact/org.springframework/spring-aspects
+    implementation group: 'org.springframework', name: 'spring-aspects', version: '5.3.22'
+
 }
 
 tasks.named('test') {

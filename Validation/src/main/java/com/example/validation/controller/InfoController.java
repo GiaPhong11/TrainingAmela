@@ -15,9 +15,12 @@ public class InfoController {
 
     @GetMapping("/")
     public String index(Model model) {
+        System.out.println("Controller");
         model.addAttribute("user", new User());
         return "Index";
     }
+
+
 
     @PostMapping("/info")
     public String showInfo(@Valid @ModelAttribute("user") User user,
@@ -31,6 +34,7 @@ public class InfoController {
             }
             return "Info";
         }catch (Exception e) {
+            System.out.println("Loi :" + e.getMessage());
             return "Index";
         }
     }
