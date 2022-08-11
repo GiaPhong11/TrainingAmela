@@ -22,4 +22,12 @@ public class User {
     @NotEmpty
     @Pattern(regexp = "(?=.{12}$)([0-9]{2,4}\\-[0-9]{2,4}\\-[0-9]{2,4})",message = "Sai dinh dang xxx-xxx-xxxx")
     private String phone ;
+
+    @NotEmpty
+    @Pattern(regexp = "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$",message = "Sai dinh dang")
+    private String email;
+
+    @NotEmpty
+    @Pattern(regexp = "^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\\d)(?=.*[!#$%&? \"]).*$",message = "Sai dinh dang")
+    private String password;
 }
