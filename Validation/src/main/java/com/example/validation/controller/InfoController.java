@@ -22,6 +22,7 @@ public class InfoController {
     @PostMapping("/info")
     public String showInfo(@Valid @ModelAttribute("user") User user,
                            BindingResult result) {
+        new User().validate(user,result);
         System.out.println(user);
         try {
             if (result.hasErrors()) {
