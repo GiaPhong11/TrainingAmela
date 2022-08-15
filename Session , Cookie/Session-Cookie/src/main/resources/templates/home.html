@@ -10,17 +10,11 @@
 <th:block layout:fragment="breadcrumb">
     <li class="breadcrumb-item">Page 1</li>
 </th:block>
-<div layout:fragment="page_content" id="page_content">
+<div>
     <h3>Page 1</h3>
 
     <div class="alert alert-info" style="display: none;" id="js-content">
     </div>
     <a th:href="@{/test2}">Go to page 2</a>
 </div>
-<th:block layout:fragment="scripts">
-    <script type="text/javascript">
-        $(function(){
-            $("#js-content").html("From Javascript").slideToggle();
-        });
-    </script>
-</th:block>
+
