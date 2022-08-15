@@ -45,7 +45,7 @@ public class BookAPI {
         }
         Optional<BookEntity> optionalBook = bookRepository.findById(book.getId());
         if(!optionalBook.isPresent()){
-            throw new NullPointerException("Book with id " + book.getId()+ " does not exist.");
+            throw new NullPointerException("Book with id " + book.getId()+ " does not exist.!!");
         }
         BookEntity bookUpdate = optionalBook.get();
         bookUpdate.setName(book.getName());
