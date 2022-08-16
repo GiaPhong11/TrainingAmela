@@ -13,12 +13,13 @@ import javax.transaction.Transactional;
 @Service
 public class UserDetailService implements UserDetailsService {
     @Autowired
-    private UserRepository userRepository;
-
+    UserRepository userRepository;
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByUsername(username).orElseThrow(()-> new UsernameNotFoundException("User not found -> username or password" + username));
+        User user = userRepository.findByUsername(username).orElseThrow(
+                ()-> new UsernameNotFoundException("User Not Fount with user name or email: "+username)
+        );
         return UserPrinciple.build(user);
     }
 }

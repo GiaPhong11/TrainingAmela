@@ -6,5 +6,5 @@ import com.example.jwt.model.RoleName;
 import java.util.Optional;
 
 public interface RoleService {
-    Optional<Role> findByRole(RoleName name);
+    Optional<Role> findByName(RoleName name);
 }

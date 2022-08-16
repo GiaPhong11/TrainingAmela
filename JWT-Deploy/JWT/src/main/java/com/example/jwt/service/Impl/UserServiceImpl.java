@@ -15,8 +15,8 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Override
-    public Optional<User> findByUsername(String name) {
-        return userRepository.findByUsername(name);
+    public Optional<User> findByUsername(String username) {
+        return userRepository.findByUsername(username);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public <S extends User> S save(S entity) {
-        return userRepository.save(entity);
+    public User save(User user) {
+        return userRepository.save(user);
     }
 }

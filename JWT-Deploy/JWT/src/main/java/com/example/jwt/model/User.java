@@ -12,7 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "users" ,uniqueConstraints = {
+@Table(name = "users", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
                 "username"
         }),
@@ -22,39 +22,33 @@ import java.util.Set;
 })
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @NotBlank
     @Size(min = 3, max = 50)
     private String name;
-
     @NotBlank
-    @Size(min =3 , max = 50)
+    @Size(min = 3, max = 50)
     private String username;
-
     @NaturalId
     @NotBlank
     @Size(max = 50)
     @Email
     private String email;
-
-    @JsonIgnore //không truyền dữ liệu ra ngoài, k để lộ pass ng dùng
+    @JsonIgnore
     @NotBlank
     @Size(min = 6, max = 100)
     private String password;
-
     @Lob
     private String avatar;
-
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "user_role",joinColumns = @JoinColumn(name = "user_id")
-    ,inverseJoinColumns = @JoinColumn(name = "role_id"))
+    @JoinTable(name = "user_role",
+            inverseJoinColumns = @JoinColumn(name = "user_id"),
+            joinColumns = @JoinColumn(name = "role_id"))
     Set<Role> roles = new HashSet<>();
 
     public User() {
     }
-
 
     public User(Long id, String name, String username, String email, String password, String avatar, Set<Role> roles) {
         this.id = id;
@@ -67,9 +61,13 @@ public class User {
     }
 
     public User(@NotBlank @Size(min = 3, max = 50) String name,
-                @NotBlank @Size(min =3 , max = 50) String username,
-                @NotBlank @Size(max = 50) @Email String email,
-                @NotBlank @Size(min = 6, max = 100) String encode) {
+                @NotBlank @Size(min = 3, max = 50) String username,
+                @NotBlank
+                @Size(max = 50)
+                @Email String email,
+                @NotBlank
+                @Size(min = 6, max = 100)
+                String encode) {
         this.name = name;
         this.username = username;
         this.email = email;

@@ -7,9 +7,6 @@ public class ResponseMessage {
         this.message = message;
     }
 
-    public ResponseMessage() {
-    }
-
     public String getMessage() {
         return message;
     }
@@ -18,3 +15,4 @@ public class ResponseMessage {
         this.message = message;
     }
 }
+

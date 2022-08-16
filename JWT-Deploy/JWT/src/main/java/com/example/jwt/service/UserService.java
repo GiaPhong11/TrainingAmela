@@ -5,9 +5,9 @@ import com.example.jwt.model.User;
 import java.util.Optional;
 
 public interface UserService {
-    Optional<User> findByUsername(String name);
+    Optional<User> findByUsername(String username);
     Boolean existsByUsername(String username);
     Boolean existsByEmail(String email);
 
-    <S extends User> S save(S entity);
+    User save(User user);
 }
