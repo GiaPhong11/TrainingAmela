@@ -1,12 +1,30 @@
--Session and Cookie 
-	+Session: 
-		1 cách để lưu lại dữ liệu người dùng sử dụng website
-		Thường được sử dụng trong các chức năng đăng nhập , đăng xuất 
-		Gía trị được lưu trong server
-		Sống trong 1 phiên làm việc
-	+Cookie:
-		Lưu trên trình duyệt của máy 
+Bài 8: Validation
+-Thao tác cho phép ứng dụng kiểm tra tính hợp lệ dữ liệu nhập vào bởi người dùng
+-Được thực hiện ở nhiều tầng khác nhau
+	+Validate ở tầng giao diện: Sử dụng JS
+	+Validate ở tầng back-end: Validate ở Controller/Service
+	+Validate ở tầng CSDL: Sử dụng các ràng buộc trong CSDL(NOT NULL, UNIQUE,..)
+-Implements interface Validator 
+
+
 Bài 9:AOP & ExceptionHanding
+-Spring AOP
+	+Aspect Oriented Programming(AOP) là 1 kỹ thuật lập trình dùng để tách logic chương trình thành các phần riêng biệt
+-Trong Spring AOP, có 4 loại advice được hỗ trợ:
+	+Before advice: Chạy trước khi method được thực thi
+	+After returning advice: Chạy sau khi method trả về 1 kết quả
+	+After throwing advice: Chạy khi method ném ra một exception
+	+Around advice: Chạy khi method được thực thi(Bao gồm 3 loại advice trên)
+-Các thuật ngữ trong AOP
+	+Join point: Là các điểm trong chương trình ví dụ như điểm thực thi method, điểm xử lý exception ,...
+	+Advice: Một hành động thực hiện ở join point
+	+Pointcut: Là expression language giúp khớp nối với jointpoint
+	+Introduction: Cho phép introduce các new interface tới bất kì object adviced nào
+	+Target Object: object sẽ được adviced
+	+Aspect: Là một class bao gồm các advice và các joint point
+	+Interceptor: là một aspect chỉ có duy nhất một advice
+	+AOP Proxy: dùng để cài đặt các Aspect
+	+Weaving: là tiến trình nối các aspect với các object, types để tạo nên advised object.
 -Exception Handling
 	+Mục tiêu : Cho thấy tầm quan trong của xử lí ngoại lệ , phân loại ngoại lệ ,các phương án xử lý
 	+Biên giới xử lý : Ngoại lệ xảy ra trong từng phạm vi phải được xử lý trước khi luồng thực thi đi khỏi phạm vi đó
@@ -15,7 +33,18 @@ Bài 9:AOP & ExceptionHanding
 		2.Sử dụng @ExceptionHandleR
 		3.Sử dụng HandlerExceptionResolver
 		4.Sử dụng error-page
-		
+	
+
+Bài 10:Session and Cookie 
+	+Session: 
+		1 cách để lưu lại dữ liệu người dùng sử dụng website
+		Thường được sử dụng trong các chức năng đăng nhập , đăng xuất 
+		Gía trị được lưu trong server
+		Sống trong 1 phiên làm việc
+	+Cookie:
+		Lưu trên trình duyệt của máy 
+
 Bài 14,15: Spring Security
 -Các thành phần cốt lõi
 	+Security, SecurityContext và Authentication
+	
